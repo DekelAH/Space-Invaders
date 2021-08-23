@@ -28,11 +28,11 @@ namespace Assets
 
         #region Properties
 
-        public T Instance
+        public static T Instance
         {
             get
             {
-                if (Instance == null)
+                if (_instance == null)
                 {
                     throw new Exception("Have no instance yet!");
                 }

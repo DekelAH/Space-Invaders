@@ -12,7 +12,7 @@ namespace Assets.Scripts
     {
         #region Editor Fields
 
-        [SerializeField] public Player _player;
+        [SerializeField] Player _player;
 
         #endregion
 

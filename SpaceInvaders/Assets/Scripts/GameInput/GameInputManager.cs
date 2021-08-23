@@ -11,18 +11,12 @@ namespace Assets.GameInput
 {
     public class GameInputManager : IUpdatable
     {
-        #region Fields
-
-        readonly GamePlayElements _gpe;
-
-        #endregion
 
         #region
 
         public void Update()
         {
-            var moveHorizontal = Input.GetAxis("Horizontal") * Time.deltaTime;
-            _gpe.Instance.Player.Move(moveHorizontal);
+            GamePlayElements.Instance.Player.Move(Input.GetAxis("Horizontal"));
         }
 
         #endregion

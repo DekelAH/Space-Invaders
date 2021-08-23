@@ -69,8 +69,8 @@
     <Compile Include="Assets\Scripts\EntryPoint.cs" />
     <Compile Include="Assets\Scripts\GameInput\GameInputManager.cs" />
     <Compile Include="Assets\Scripts\GamePlayElements.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IModelActions.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IUpdatable.cs" />
-    <Compile Include="Assets\Scripts\Models\BaseModel.cs" />
     <Compile Include="Assets\Scripts\Models\Player.cs" />
     <Compile Include="Assets\Scripts\Services\GamePlayServices.cs" />
     <Reference Include="UnityEngine">
