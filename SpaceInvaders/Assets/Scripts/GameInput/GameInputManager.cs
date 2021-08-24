@@ -12,7 +12,7 @@ namespace Assets.GameInput
     public class GameInputManager : IUpdatable
     {
 
-        #region
+        #region Methods
 
         public void Update()
         {

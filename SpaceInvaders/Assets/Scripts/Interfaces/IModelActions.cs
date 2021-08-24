@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Scripts.Interfaces
 {
-    interface IModelActions
+    public interface IModelActions
     {
         #region Methods
 

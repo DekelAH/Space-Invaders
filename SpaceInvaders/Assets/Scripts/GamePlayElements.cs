@@ -1,4 +1,5 @@
 ﻿using Assets.Models;
+using Assets.Scripts.Factories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,13 +13,15 @@ namespace Assets.Scripts
     {
         #region Editor Fields
 
-        [SerializeField] Player _player;
+        [SerializeField] private Player _player;
+        [SerializeField] private AstroidFactory _astroidFactory;
 
         #endregion
 
         #region Properties
 
         public Player Player => _player;
+        public AstroidFactory AstroidFactory => _astroidFactory;
 
         #endregion
 
