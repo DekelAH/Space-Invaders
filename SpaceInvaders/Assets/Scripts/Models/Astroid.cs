@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Interfaces;
+using UnityEngine;
 
 namespace Assets.Scripts.Models
 {
@@ -6,16 +7,24 @@ namespace Assets.Scripts.Models
     {
         #region Fields
 
-        [SerializeField] private float _speed = 0.5f;
+        [SerializeField] private float _speed = 100f;
         [SerializeField] private int _health = 10;
+        [SerializeField] Rigidbody2D rb;
 
         #endregion
 
         #region Methods
 
+        private void Update()
+        {
+            Move();
+        }
+
         public void Move()
         {
 
+            var yAxis = _speed * (-1) * Time.deltaTime;
+            transform.Translate(0, yAxis, 0);
         }
 
         #endregion

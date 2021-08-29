@@ -496,6 +496,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 1803360813}
   _astroidFactory: {fileID: 1950450238}
+  _astroid: {fileID: 1214071042589071513, guid: 1a3d962e5c32f7049a13545a9f163fbd,
+    type: 3}
 --- !u!4 &1950450236
 Transform:
   m_ObjectHideFlags: 0
@@ -551,12 +553,12 @@ PrefabInstance:
     - target: {fileID: 1214071042589071512, guid: 1a3d962e5c32f7049a13545a9f163fbd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.34
+      value: -1.54
       objectReference: {fileID: 0}
     - target: {fileID: 1214071042589071512, guid: 1a3d962e5c32f7049a13545a9f163fbd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.96
+      value: 3.64
       objectReference: {fileID: 0}
     - target: {fileID: 1214071042589071512, guid: 1a3d962e5c32f7049a13545a9f163fbd,
         type: 3}

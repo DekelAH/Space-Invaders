@@ -72,7 +72,9 @@
     <Compile Include="Assets\Scripts\GameInput\GameInputManager.cs" />
     <Compile Include="Assets\Scripts\GamePlayElements.cs" />
     <Compile Include="Assets\Scripts\GameSpawn\SpawnManager.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\ICoroutineServices.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IModelActions.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IStartable.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IUpdatable.cs" />
     <Compile Include="Assets\Scripts\Models\Astroid.cs" />
     <Compile Include="Assets\Scripts\Models\Player.cs" />

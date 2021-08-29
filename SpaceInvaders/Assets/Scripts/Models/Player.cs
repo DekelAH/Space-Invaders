@@ -34,5 +34,11 @@ namespace Assets.Models
 
 
         #endregion
+
+        #region Properties
+
+        public int Health { get { return health; } private set { Health = value; } }
+
+        #endregion
     }
 }

@@ -1,6 +1,9 @@
 ﻿using Assets.GameInput;
 using Assets.Interfaces;
+using Assets.Scripts.Factories;
 using Assets.Scripts.GameSpawn;
+using Assets.Scripts.Interfaces;
+using Assets.Scripts.Models;
 using UnityEngine;
 
 namespace Assets.Services
@@ -10,6 +13,12 @@ namespace Assets.Services
         #region Fields
 
         private static UnityCore _unityCore;
+
+        #endregion
+
+        #region Properties
+
+        public static ICoroutineServices CoroutineServices => _unityCore;
 
         #endregion
 
@@ -23,12 +32,14 @@ namespace Assets.Services
             IUpdatable sim = new GameInputManager();
             _unityCore.RegisterUpdatable(sim);
 
-            IUpdatable spawn = new SpawnManager();
-            _unityCore.RegisterUpdatable(spawn);
+            IStartable st = new SpawnManager();
+            _unityCore.RegisterStartable(st);
 
             Object.DontDestroyOnLoad(go);
         }
 
-        #endregion 
+        #endregion
+
+
     }
 }

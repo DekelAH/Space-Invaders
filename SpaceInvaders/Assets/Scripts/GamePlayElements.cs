@@ -1,5 +1,6 @@
 ﻿using Assets.Models;
 using Assets.Scripts.Factories;
+using Assets.Scripts.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace Assets.Scripts
 
         [SerializeField] private Player _player;
         [SerializeField] private AstroidFactory _astroidFactory;
+        [SerializeField] private Astroid _astroid;
 
         #endregion
 
@@ -22,6 +24,7 @@ namespace Assets.Scripts
 
         public Player Player => _player;
         public AstroidFactory AstroidFactory => _astroidFactory;
+        public Astroid Astroid => _astroid;
 
         #endregion
 

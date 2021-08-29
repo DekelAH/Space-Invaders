@@ -11,7 +11,7 @@ namespace Assets.Scripts.Factories
     {
         #region Methods
 
-        public abstract void RandomAstroidSpawner();
+        public abstract GameObject Create(Vector2 startPosition, Quaternion rotation);
 
         #endregion
     }
